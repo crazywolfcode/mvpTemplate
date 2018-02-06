@@ -12,7 +12,6 @@ import com.clf.mvptemplate.mvp.ui.view.MvpView;
 
 public class MvpPresenter extends BasePresenter<MvpView> {
 
-
     @Override
     public void attachView(MvpView view) {
         this.mView = view;
@@ -31,9 +30,7 @@ public class MvpPresenter extends BasePresenter<MvpView> {
         }
         //显示正在加载进度条
         mView.showLoading();
-        DataModelManager.newInstance2(UserModel.class.getName())
-                .setParams(params)
-                .execute(callBack);
+        DataModelManager.newInstance(UserModel.class.getName()).setParams(params).execute(callBack);
     }
 
     private MvpCallback callBack = new MvpCallback<String>() {
