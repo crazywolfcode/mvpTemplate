@@ -7,7 +7,7 @@ import com.clf.mvptemplate.mvp.presenter.base.BasePresenter;
 import com.clf.mvptemplate.mvp.ui.view.MvpView;
 
 /**
- * Created by hacker on 2018/2/6.
+ * Created by clf on 2018/2/6.
  */
 
 public class MvpPresenter extends BasePresenter<MvpView> {
